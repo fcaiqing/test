@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>糖心泡泡</title>
+    <!--
+    <link rel="icon" type="image/GIF" href="res/favicon.ico"/>
+    -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="no"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="false"/>
+    <meta name="360-fullscreen" content="false"/>
+    <style>
+        body, canvas, div {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -khtml-user-select: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+    </style>
+	<!--<script src="http://qzonestyle.gtimg.cn/qzone/phone/m/v4/widget/mobile/jsbridge.js"></script>-->
+	<!--<script type="text/javascript" src="http://jsapi.qq.com/get?api=x5gameplayer.*"></script>-->
+    <script type="text/javascript" src="http://d.hgame.com/loadsdk"></script>
+	<script type="text/javascript" src="zepto.min.js"></script>
+    <script src="socket.io-1.3.7.js"></script>
+</head>
+
+<body style="padding:0; margin: 0; background: #000;">
+<script src="res/loading.js"></script>
+<div style="position:absolute;z-index:1000;">
+<img src="res/screen-rotate-tips.jpg" id='screen-rotate-tips' alt="竖屏体验更佳" style="display:none;"/>
+</div>
+<canvas id="gameCanvas" width="960" height="1280"></canvas>
+<script src="frameworks/cocos2d-html5/CCBoot.js"></script>
+<script cocos src="main.js"></script>
+
+<!--<script src="http://qzonestyle.gtimg.cn/qzone/mobilepage/gamesBar/common/pop_pay_tips.js"></script>-->
+
+</body>
+</html>
